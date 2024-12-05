@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #f9c028;
+}
+body {
+  background: var(--bg-color);
+  font-family: "Roboto", serif;
+}
+
+.header {
+  display: flex;
+  /* ; */
+  align-items: center;
+  padding: 20px;
+  /* justify-content: space-between; */
+}
+.header .heading {
+  /* ; */
+  padding: 2px;
+  flex-grow: 1;
+
+}
+.header .heading button {
+  padding: 13px 35px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 25px;
+  font-weight: 650;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .heading button:hover {
+  background: #d88b01;
+  color: #fff;
+}
+.header .heading button:last-child:hover {
+  background: #fff;
+  color: #000;
+}
+.header .heading button:last-child {
+  background: #d88b01;
+}
+
+.choose{
+  /* ; */
+  display: flex;
+  /* ; */
+  align-items: center;
+  padding: 20px;
+}
+.choose .chosen{
+  flex-grow: 1;
+}
+.choose .chosen:last-child{
+  display: flex;
+  gap: 10px;
+}
+.banner{
+  display: flex;
+  /* ; */
+  padding: 10px;
+}
+.banner div{
+  /* ; */
+  flex-grow: 1;
+}
+.banner div:first-child h2{
+font-size: 3rem;
+width: 300px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.banner div:nth-child(2){
+  /* width: 400px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.banner div:nth-child(2) img{
+  width: 80%;
+}
+.banner div:nth-child(3) div:first-child{
+  padding: 30px;
+  text-align: right;
+}
+.banner div:nth-child(3) div:first-child span{
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+.banner div:nth-child(3) div:last-child{
+  text-align: right;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.bottom div{
+  flex-grow: 1
+}
+.bottom div:first-child p{
+  width: 400px;
+  font-size: 0.9rem;
+}
+.bottom div:nth-child(2){
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.bottom div:last-child{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom div:last-child div:first-child{
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom div:last-child div:first-child span:nth-child(odd){
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.bottom div:last-child div:last-child{
+  display: flex;
+  justify-content: center;
+}
+.bottom div:last-child div:last-child button{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  font-weight: 600;
+
+}
+@media (max-width:985px){
+  .thursday{
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .banner div:nth-child(2) img{
+    width: 100%;
+  }
+  .bottom{
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 10px;
+  }
+  .banner{
+    flex-wrap: wrap;
+  }
+  .header{
+    flex-wrap: wrap;
+  }
+  
+.bottom div:first-child p{
+  width: inherit;
+}
+.banner div:first-child h2{
+  width: inherit;
+}
+.dollar{
+  display: flex;
+  gap: 10px;
+}
+
+}
